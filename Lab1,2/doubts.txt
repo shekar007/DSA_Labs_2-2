@@ -1,0 +1,2 @@
+1. pointers
+2. testing variable size in add task

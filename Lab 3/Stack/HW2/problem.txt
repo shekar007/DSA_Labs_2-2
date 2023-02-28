@@ -1,0 +1,19 @@
+Home Exercise 2: Arithmetic expressions can have either infix, prefix or post-fix notation. We are
+used to the infix notation in general where the binary operator is present between the
+operands. For eg. "3+4", "1-(3-4*6)+4/2", etc. The same expressions in postfix notation would
+look like "3 4 +" and "1 3 4 6 * - - 4 2 / +" respectively. This may not look very intuitive to us but
+the postfix notation has certain advantages. One such advantage is that we would have needed
+parenthesis to specify the operator precedence overriding in infix notation, whereas it is implicit
+in the postfix notation. The postfix notation is also known as Reverse Polish Notation (RPN).
+Your task is to write a program that would accept a string containing an RPN arithmetic
+expression as input, and print the result as the output. You can assume that the operators
+would be among +, -, * and /, your operands would be integer values, these would be separated
+15
+by spaces (as given in the example below), and your result should be the floating-point result
+obtained on evaluating the expression. (Hint: You can use the stack you have implemented.)
+For example: If the input is "1 3 4 6 * - - 4 2 / +", the result would be 24.0.
+If the input is "1 2 3 4 5 + * - -", the result would be 26.0.
+1346 
+*--/+
+346*-
+3 - 46*

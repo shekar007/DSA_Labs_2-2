@@ -1,0 +1,10 @@
+linkedlist.o: linkedlist.c linkedlist.h
+    gcc -c linkedlist.c
+q_list.o : q_list.c q_list.h
+    gcc -c q_list.c
+queueDriver.o : queueDriver.c
+    gcc -c queueDriver.c
+runCheck : linkedlist.o q_list.o queueDriver.o
+    gcc -o q_with_list queueDriver.o q_list.o linkedlist.o
+clean : 
+    rm -f *.o runCheck

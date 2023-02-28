@@ -1,0 +1,9 @@
+queueDriver.o : queueDriver.c
+	gcc -c queueDriver.c
+queue_array.o : queue_array.c queue.h
+	gcc -c queue_array.c
+runCheck : queue_array.o queueDriver.o queue.h
+	gcc -o runCheck queueDriver.o queue_array.o
+	./runCheck
+clean : 
+	rm -f *.o runCheck
